@@ -10,7 +10,7 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="vendor/jquery-ui.css">
+        <link rel="stylesheet" href="js/vendor/jquery-ui.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>
@@ -21,15 +21,15 @@
         
         
         <div id="crocodile-dialog" class="dialog">
-          "etrzrtz(ty"
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tortor nunc. Nunc venenatis nisi feugiat elit convallis feugiat ac a sem. Fusce interdum mauris augue, vehicula interdum velit hendrerit vel. Nulla vel nulla tortor. Quisque et lectus mauris. Duis nunc sem, accumsan at fringilla convallis, tristique a nibh. Pellentesque pellentesque, urna ut suscipit hendrerit, purus felis mattis risus, non varius quam enim quis nulla. Curabitur sit amet justo fermentum, lacinia purus in, bibendum magna. Mauris mauris est, venenatis egestas mi quis, scelerisque suscipit lectus. Cras justo sapien, hendrerit ac porttitor at, blandit sit amet metus. Nam posuere orci vel tincidunt aliquam. Suspendisse lacus magna, ornare sed diam vel, euismod sagittis nisi. Pellentesque congue ultricies massa placerat suscipit. Aliquam eget commodo dolor. Vivamus quis velit lobortis, viverra dolor vitae, rutrum augue. Etiam non tortor vitae turpis viverra elementum non non enim.</p>
         </div>
         
         <div id="poisson1-dialog" class="dialog">
-        ertyhertherherth
+          <p>Morbi vulputate vitae justo sit amet porta. Vivamus porttitor finibus quam, quis eleifend erat vestibulum ut. Ut blandit, elit eget elementum vestibulum, lectus augue fermentum dolor, a pretium nunc eros nec magna. Nulla ac vulputate purus. In ac ipsum placerat mauris scelerisque tincidunt. Curabitur tincidunt posuere placerat. Nulla blandit fermentum metus et semper. Etiam sed suscipit dolor.</p>
         </div>
 
         <div id="poisson2-dialog" class="dialog">
-        
+          <p>Fusce convallis urna ac porttitor facilisis. Duis tincidunt, odio sollicitudin tincidunt placerat, nunc purus mollis velit, in viverra metus nibh quis sapien. Donec aliquam bibendum placerat. Ut aliquam rhoncus augue, ut vulputate purus dictum quis. Curabitur tincidunt dolor sit amet accumsan hendrerit. Ut ante urna, congue eget consectetur ac, pretium at sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vel libero id nisl scelerisque volutpat fringilla a velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque nulla felis, facilisis vel viverra auctor, ultrices in velit. Quisque sollicitudin tempor consectetur. Curabitur posuere odio at velit dapibus, id blandit neque egestas.</p>
         </div>
         
         <div id="tribunal-dialog" class="dialog">

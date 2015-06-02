@@ -1,10 +1,10 @@
-open_dialog = (element) ->
-  element.dialog "option",
+open_dialog = (dialogue, element) ->
+  dialogue.dialog "option",
     position :
-      my: "center middle"
-      at: "center middle"
-      of: "body"
-  element.dialog( "open")
+      my: "center bottom"
+      at: "center top"
+      of: element
+  dialogue.dialog( "open")
  
 open_new_tab = (url) -> window.open(url, '_blank').focus()
   
@@ -21,7 +21,7 @@ $ ->
   $.get "img/carte2.svg", (rawSvg) -> 
     $( "#map").append(document.importNode rawSvg.documentElement,true)
     
-    $( "#crocodile, #poisson1, #poisson2, #tribunal").on "mouseenter", -> open_dialog $("##{$(this).attr('id')}-dialog")
+    $( "#crocodile, #poisson1, #poisson2, #tribunal").on "mouseenter", -> open_dialog $("##{$(this).attr('id')}-dialog") , $("##{$(this).attr('id')}" )
     $( "#crocodile, #poisson1, #poisson2, #tribunal").on "mouseleave", ->  $("##{$(this).attr('id')}-dialog").dialog("close")
     
     

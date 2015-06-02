@@ -2,15 +2,15 @@
 (function() {
   var open_dialog, open_new_tab;
 
-  open_dialog = function(element) {
-    element.dialog("option", {
+  open_dialog = function(dialogue, element) {
+    dialogue.dialog("option", {
       position: {
-        my: "center middle",
-        at: "center middle",
-        of: "body"
+        my: "center bottom",
+        at: "center top",
+        of: element
       }
     });
-    return element.dialog("open");
+    return dialogue.dialog("open");
   };
 
   open_new_tab = function(url) {
@@ -28,7 +28,7 @@
     return $.get("img/carte2.svg", function(rawSvg) {
       $("#map").append(document.importNode(rawSvg.documentElement, true));
       $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseenter", function() {
-        return open_dialog($("#" + ($(this).attr('id')) + "-dialog"));
+        return open_dialog($("#" + ($(this).attr('id')) + "-dialog"), $("#" + ($(this).attr('id'))));
       });
       $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseleave", function() {
         return $("#" + ($(this).attr('id')) + "-dialog").dialog("close");
