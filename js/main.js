@@ -26,20 +26,22 @@
       autoResize: true
     });
     return $.get("img/carte2.svg", function(rawSvg) {
+      var anchor;
       $("#map").append(document.importNode(rawSvg.documentElement, true));
-      $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseenter", function() {
+      anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #tspan3925, #tspan3927, #tspan3929";
+      $(anchor).on("mouseenter", function() {
         return $(this).css('cursor', 'pointer');
       });
-      $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseleave", function() {
+      $(anchor).on("mouseleave", function() {
         return $(this).css('cursor', 'default');
       });
-      $("#crocodile").on("click", function() {
+      $("#crocodile, #tspan3927").on("click", function() {
         return open_new_tab("AlligatorEggs/index.html");
       });
-      $("#poisson1, #poisson2").on("click", function() {
+      $("#poisson1, #poisson2, #tspan3925").on("click", function() {
         return open_new_tab("Carroll/tag3.html");
       });
-      return $("#tribunal").on("click", function() {
+      return $("#tribunal, #tspan3929").on("click", function() {
         return open_new_tab("Carroll/LogicGame1.html");
       });
     }, "xml");
