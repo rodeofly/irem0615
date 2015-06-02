@@ -42,7 +42,7 @@
         return open_new_tab("Carroll/tag3.html");
       });
       return $("#tribunal, #tspan3929").on("click", function() {
-        return open_new_tab("Carroll/LogicGame1.html");
+        return open_new_tab("Carroll/LogicGame5.html");
       });
     }, "xml");
   });

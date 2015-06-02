@@ -22,10 +22,12 @@ $ ->
     $( "#map").append(document.importNode rawSvg.documentElement,true)
     
     anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #tspan3925, #tspan3927, #tspan3929"
-    $( ).on "mouseenter", ->
+    
+    $( anchor ).on "mouseenter", ->
       #open_dialog $("##{$(this).attr('id')}-dialog") , $("##{$(this).attr('id')}" )
       $(this).css( 'cursor', 'pointer' );
-    $( "#crocodile, #poisson1, #poisson2, #tribunal").on "mouseleave", ->  
+    
+    $( anchor ).on "mouseleave", ->  
       $(this).css( 'cursor', 'default' );
       #$("##{$(this).attr('id')}-dialog").dialog("close")
     

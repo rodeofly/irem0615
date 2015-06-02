@@ -55,6 +55,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#map {
+  position : absolute; 
+  margin : auto;
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Monsieur La Doulaise';
