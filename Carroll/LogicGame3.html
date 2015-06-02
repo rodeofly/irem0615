@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <!--meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"-->
+        <title>Logic game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		    <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">Puzzle logique de Lewis Carroll</h1>
+                <nav>
+                    <ul>
+                        <li><a href="LogicGame1.html">maison</a></li>
+                        <li><a href="LogicGame2.html">univers</a></li>
+                        <li><a href="LogicGame3.html">prémisses</a></li>
+                        <li><a href="LogicGame4.html">conclusions</a></li>
+                        <li><a href="LogicGame5.html">syllogismes</a></li>
+                        <li><a href="LogicGame6.html">utilitaire</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>Codage des propositions</h1>
+                        <p>Une proposition (prémisse ou conclusion d'un syllogisme) peut être codée par des jetons dans un tableau comme celui ci-dessous; ici le haut du tableau représente les <span class="sA"></span> et la moitié gauche du tableau représente les <span class="sC"></span> :</p>
+                    </header>
+                    <section>
+                        <h2>Le tableau carré</h2>
+                          <table>
+                            <tr>
+                              <td></td>
+                              <td>
+                                <table><tr>
+                                  <td class="carre"><span class="sC"></span></td>
+                                  <td class="carre">   pas <span class="sC"></span></td></tr>
+                                </table>
+                              </td>
+                            </tr>
+                          <tr>
+                            <td>
+                              <table>
+                                <tr><td class="carre"><span class="sA"></span></td></tr>
+                                <tr><td class="carre">pas <span class="sA"></span></td></tr>
+                              </table>
+                          <td>
+                          <!-- codage:
+                              prem0 en bas
+                              prem1 en haut
+                              mid0 à droite et mid1 à gauche
+                              -->
+                          <table id="plateau">
+                            <tr>
+                              <td class="cellule nord sud est ouest" id="prem1conc1mid1"></td>
+                              <td class="cellule nord sud est ouest" id="prem1conc1mid0"></td>
+                            </tr>
+                            <tr>
+                              <td class="cellule nord sud est ouest" id="prem0conc1mid1"></td>
+                              <td class="cellule nord sud est ouest" id="prem0conc1mid0"></td>
+                            </tr>
+                      </table>
+                      </td></tr></table>
+                      <p></p>
+                      <div class="jeton rouge"></div>
+                      <div class="jeton rouge"></div>
+                      <div class="jeton rouge"></div>
+                      <div class="jeton rouge"></div>
+                     <p> </p>
+                      <div class="jeton gris"></div>
+                      <div class="jeton gris"></div>
+                      <div class="jeton gris"></div>
+                      <div class="jeton gris"></div>
+                    </section>
+                    <footer>
+                        <h3>proposition représentée</h3>
+                      <p id="sortie"></p>
+                    </footer>
+                </article>
+
+                <aside>
+                        <h2 id="énoncé">Pour aller plus loin</h2>
+                  <p>Dans <a href="LogicGame4.html">le chapitre suivant</a>, le tableau sera déformé en courbant le trait horizontal du milieu de telle façon que le trait du bas soit plié en deux :</p>
+                  <p>De </p>
+                  <table>
+                    <tr>
+                      <td class="cellule ouestB nordB est sudR"></td>
+                      <td class="cellule ouest nordV estV sudR"></td>
+                    </tr>
+                    <tr>
+                      <td class="cellule ouest nordR est sud"></td>
+                      <td class="cellule ouest nordR est sud"></td>
+                    </tr>
+                  </table>
+                  <p>on passera à </p>
+                          <table>
+                            <tr>
+                              <td class="cellule ouestB nordB"></td>
+                              <td class="cellule nordB sudR est"></td>
+                              <td class="cellule nordV sudR ouest"></td>
+                              <td class="cellule estV nordV"></td>
+                            </tr>
+                            <tr>
+                              <td class="cellule estR sudB ouestB"></td>
+                              <td class="cellule nordR sud est ouest"></td>
+                              <td class="cellule nordR sud estR ouest"></td>
+                              <td class="cellule ouestR sudV estV"></td>
+                            </tr>
+                      </table>
+                  <h5>Dans <a href="LogicGame5">le dernier chapitre</a>, on combinera les deux manières de faire un tableau pour représenter deux propositions et résoudre des syllogismes</h5>
+                </aside>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h5>Alain Busser, IREM 974, 2015</h5>
+            </footer>
+        </div>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'); document.write('<script src="js/vendor/jquery-ui.js"><\/script>'); document.write('<script src="js/vendor/jquery.ui.touch-punch.js"><\/script>')</script>
+
+        <script src="js/logic3.js"></script>
+    </body>
+</html>

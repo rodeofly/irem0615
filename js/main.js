@@ -14,45 +14,30 @@
   };
 
   open_new_tab = function(url) {
-    return window.open(url, '_blank').focus();
+    return window.open(url, '_self').focus();
   };
 
   $(function() {
     $(".dialog").dialog({
       autoOpen: false,
       dialogClass: "noTitleStuff",
+      height: "auto",
       width: "auto",
-      minHeight: 0,
       autoResize: true
     });
     return $.get("img/carte2.svg", function(rawSvg) {
       $("#map").append(document.importNode(rawSvg.documentElement, true));
-      $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseenter", function() {
-        return open_dialog($("#" + ($(this).attr('id')) + "-dialog"), $("#" + ($(this).attr('id'))));
-      });
-      $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseleave", function() {
-        return $("#" + ($(this).attr('id')) + "-dialog").dialog("close");
-      });
-      $("#poisson1").on("click", function() {
-        return open_new_tab("http://www.google.fr");
-      });
-      $("#poisson2").on("click", function() {
-        return open_new_tab("http://www.google.fr");
-      });
-      $("#tribunal").on("click", function() {
-        return open_new_tab("http://www.google.fr");
-      });
       $("#crocodile").on("click", function() {
-        return open_new_tab("http://www.google.fr");
+        return open_new_tab("AlligatorEggs/index.html");
       });
       $("#poisson1").on("click", function() {
-        return open_new_tab("http://www.google.fr");
+        return open_new_tab("Carroll/tag3.html");
       });
       $("#poisson2").on("click", function() {
-        return open_new_tab("http://www.google.fr");
+        return open_new_tab("Carroll/tag3.html");
       });
       return $("#tribunal").on("click", function() {
-        return open_new_tab("http://www.google.fr");
+        return open_new_tab("Carroll/LogicGame1.html");
       });
     }, "xml");
   });

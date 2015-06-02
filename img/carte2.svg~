@@ -3901,7 +3901,9 @@
      d="m 353.4245,236.27201 c 0,0 54.7931,47.95538 87.1623,47.77785 32.3692,-0.17753 82.64277,-46.48655 82.64277,-46.48655"
      id="path3827"
      style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0" />
-
+  <a
+     xlink:href="Carroll/LogicGame5.html" xlink:show="new"
+     id="a762">
     <g
        transform="matrix(1,0,0,0.76242332,180,491.31085)"
        id="tribunal">
@@ -4042,6 +4044,7 @@
         </g>
       </g>
     </g>
+  </a>
   <text
      x="662"
      y="167.742"
