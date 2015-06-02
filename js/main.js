@@ -27,13 +27,16 @@
     });
     return $.get("img/carte2.svg", function(rawSvg) {
       $("#map").append(document.importNode(rawSvg.documentElement, true));
+      $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseenter", function() {
+        return $(this).css('cursor', 'pointer');
+      });
+      $("#crocodile, #poisson1, #poisson2, #tribunal").on("mouseleave", function() {
+        return $(this).css('cursor', 'default');
+      });
       $("#crocodile").on("click", function() {
         return open_new_tab("AlligatorEggs/index.html");
       });
-      $("#poisson1").on("click", function() {
-        return open_new_tab("Carroll/tag3.html");
-      });
-      $("#poisson2").on("click", function() {
+      $("#poisson1, #poisson2").on("click", function() {
         return open_new_tab("Carroll/tag3.html");
       });
       return $("#tribunal").on("click", function() {
