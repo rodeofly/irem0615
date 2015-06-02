@@ -14,13 +14,7 @@
   };
 
   open_new_tab = function(url) {
-    var win;
-    win = window.open(url, '_blank');
-    if (win) {
-      return win.focus();
-    } else {
-      return alert('Please allow popups for this site');
-    }
+    return window.open(url, '_blank').focus();
   };
 
   $(function() {

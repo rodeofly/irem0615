@@ -4,16 +4,10 @@ open_dialog = (element) ->
       my: "center middle"
       at: "center middle"
       of: "body"
-  element.dialog( "open")    
-  
+  element.dialog( "open")
  
-open_new_tab = (url) ->
-  win = window.open(url, '_blank')
-  if win
-    win.focus()
-  else
-    alert 'Please allow popups for this site'
-
+open_new_tab = (url) -> window.open(url, '_blank').focus()
+  
 
 $ ->
 
