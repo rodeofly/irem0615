@@ -79,7 +79,7 @@
             </footer>
         </div>
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'); document.write('<script src="js/vendor/jquery-ui.js"><\/script>'); document.write('<script src="js/vendor/jquery.ui.touch-punch.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'); document.write('<script src="js/vendor/jquery-ui.js"><\/script>'); document.write('<script src="js/vendor/jquery.ui.touch-punch.js"><\/script>')</script>
 
     </body>
 </html>

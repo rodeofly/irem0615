@@ -6,10 +6,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/jquery-ui.css" />
-  <script src="js/coffee-script.js"></script>
-  <script src="js/vendor/jquery-1.11.2.min.js"></script>
-  <script src="js/vendor/jquery-ui.js"></script>
-  <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/coffee-script/1.4.0/coffee-script.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+  <script src="https://raw.github.com/furf/jquery-ui-touch-punch/master/jquery.ui.touch-punch.min.js"></script>
 
 <style type="text/css">
 	h1 { color: darkRed; }
