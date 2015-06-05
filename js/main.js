@@ -25,26 +25,26 @@
       width: "auto",
       autoResize: true
     });
-    return $.get("img/carte2.svg", function(rawSvg) {
+    return $.get("img/carte4.svg", function(rawSvg) {
       var anchor;
       $("#map").append(document.importNode(rawSvg.documentElement, true));
-      anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #tspan4695, #tspan4697, #tspan4699, #tspan4701";
+      anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #text3913, #text4897, #text4901, #text4905, #text3775, #text3785, #text3779";
       $(anchor).on("mouseenter", function() {
         return $(this).css('cursor', 'pointer');
       });
       $(anchor).on("mouseleave", function() {
         return $(this).css('cursor', 'default');
       });
-      $("#tspan4695").on("click", function() {
+      $("#text3913").on("click", function() {
         return open_new_tab("sophus.html");
       });
-      $("#crocodile, #tspan4699").on("click", function() {
-        return open_new_tab("AlligatorEggs/index.html");
-      });
-      $("#poisson1, #poisson2, #tspan4697").on("click", function() {
+      $("#poisson1, #poisson2, #text4897, #text3779").on("click", function() {
         return open_new_tab("Carroll/tag3.html");
       });
-      return $("#tribunal, #tspan4701").on("click", function() {
+      $("#crocodile, #text4901, #text3775").on("click", function() {
+        return open_new_tab("AlligatorEggs/index.html");
+      });
+      return $("#tribunal, #text4905, #text3785").on("click", function() {
         return open_new_tab("Carroll/LogicGame5.html");
       });
     }, "xml");

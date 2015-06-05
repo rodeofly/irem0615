@@ -18,10 +18,10 @@ $ ->
     width       : "auto"
     autoResize  : true  
   
-  $.get "img/carte2.svg", (rawSvg) -> 
+  $.get "img/carte4.svg", (rawSvg) -> 
     $( "#map").append(document.importNode rawSvg.documentElement,true)
     
-    anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #tspan4695, #tspan4697, #tspan4699, #tspan4701"
+    anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #text3913, #text4897, #text4901, #text4905, #text3775, #text3785, #text3779"
     
     $( anchor ).on "mouseenter", ->
       #open_dialog $("##{$(this).attr('id')}-dialog") , $("##{$(this).attr('id')}" )
@@ -32,16 +32,18 @@ $ ->
       #$("##{$(this).attr('id')}-dialog").dialog("close")
     
     
-    $( "#tspan4695").on "click", -> 
+    $( "#text3913").on "click", -> 
       open_new_tab("sophus.html")
       
-    $( "#crocodile, #tspan4699").on "click", -> 
+    $( "#poisson1, #poisson2, #text4897, #text3779").on "click", -> 
+      open_new_tab("Carroll/tag3.html")
+      
+    $( "#crocodile, #text4901, #text3775").on "click", -> 
       open_new_tab("AlligatorEggs/index.html")
     
-    $( "#poisson1, #poisson2, #tspan4697").on "click", -> 
-      open_new_tab("Carroll/tag3.html")
+   
 
-    $( "#tribunal, #tspan4701").on "click", -> 
+    $( "#tribunal, #text4905, #text3785").on "click", -> 
       open_new_tab("Carroll/LogicGame5.html")
      
   , "xml"
