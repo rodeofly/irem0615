@@ -55,14 +55,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#map, #svg2 {
+#map {
   position : absolute; 
   margin : auto;
 }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Monsieur La Doulaise';
+  font-family: 'LaDoulaise';
   font-style: normal;
   font-weight: 400;
   src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(LaDoulaise-ext.woff2) format('woff2');
@@ -70,7 +70,7 @@ textarea {
 }
 /* latin */
 @font-face {
-  font-family: 'Monsieur La Doulaise';
+  font-family: 'LaDoulaise-ext';
   font-style: normal;
   font-weight: 400;
   src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(LaDoulaise.woff2) format('woff2');
@@ -83,7 +83,7 @@ textarea {
   
 #tspan3923 {
 font-weight : bolder;
-font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'LaDoulaise-ext', cursive;
 font-size : 2em;
 }
 

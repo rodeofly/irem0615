@@ -21,7 +21,7 @@ $ ->
   $.get "img/carte2.svg", (rawSvg) -> 
     $( "#map").append(document.importNode rawSvg.documentElement,true)
     
-    anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #tspan3925, #tspan3927, #tspan3929"
+    anchor = "#crocodile, #poisson1, #poisson2, #tribunal, #tspan4695, #tspan4697, #tspan4699, #tspan4701"
     
     $( anchor ).on "mouseenter", ->
       #open_dialog $("##{$(this).attr('id')}-dialog") , $("##{$(this).attr('id')}" )
@@ -31,13 +31,17 @@ $ ->
       $(this).css( 'cursor', 'default' );
       #$("##{$(this).attr('id')}-dialog").dialog("close")
     
-    $( "#crocodile, #tspan3927").on "click", -> 
+    
+    $( "#tspan4695").on "click", -> 
+      open_new_tab("sophus.html")
+      
+    $( "#crocodile, #tspan4699").on "click", -> 
       open_new_tab("AlligatorEggs/index.html")
     
-    $( "#poisson1, #poisson2, #tspan3925").on "click", -> 
+    $( "#poisson1, #poisson2, #tspan4697").on "click", -> 
       open_new_tab("Carroll/tag3.html")
 
-    $( "#tribunal, #tspan3929").on "click", -> 
+    $( "#tribunal, #tspan4701").on "click", -> 
       open_new_tab("Carroll/LogicGame5.html")
      
   , "xml"
